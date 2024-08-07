@@ -1,0 +1,108 @@
+baseURL: https://hakuna.xyz/
+languageCode: "zh-CN"
+defaultContentLanguage: "zh"
+title: Hakuna's Notes
+theme: PaperMod
+hasCJKLanguage: true
+enableEmoji: true
+enableRobotsTXT: true
+buildFuture: true
+paginate: 10
+# mainsections: ["posts", "en"]
+
+languages:
+  zh:
+    languageName: 中文
+    params:
+      homeInfoParams:
+        Title: 欢迎欢迎!
+        Content: 「你算是捡到宝了！」—— 平凡即是真，技术即是美。
+  en:
+    languageName: English
+    params:
+      homeInfoParams:
+        Title: Hi there!
+        Content: It's Onepiece.
+params:
+  # ShowReadingTime: true
+  description: '记录工作，记录学习！'
+  author: Hakuna
+  DateFormat: "2006-01-02"
+  ShowCodeCopyButtons: true
+  showtoc: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  socialIcons:
+    - name: Rss
+      url: "index.xml"
+    - name: email
+      url: "mailto:nyl332750862@gmail.com"
+    - name: github
+      url: "https://github.com/Hakunassan"
+    # - name: zhihu
+    #   url: https://www.zhihu.com/people/caol64
+    # - name: wechat
+    #   url: imgs/qrcode.jpg
+    # - name: buymeacoffee
+    #   url: https://www.buymeacoffee.com/caol64
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  assets:
+    disableHLJS: true
+
+  comments: true
+
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+menu:
+  main:
+    - identifier: archive
+      name: Archive
+      url: /archive/
+      weight: 10
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+
+
+
+permalinks:
+  page:
+    posts: /posts/:year/:month/:slug/
+  section:
+    posts: /posts/
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+markup:
+  highlight:
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    # style: monokailight
+  goldmark:
+    renderer:
+      unsafe: true
