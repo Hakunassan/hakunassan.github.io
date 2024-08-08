@@ -2,3 +2,4 @@
 /public
 .obsidian
 secrets/
+.hugo_build.lock

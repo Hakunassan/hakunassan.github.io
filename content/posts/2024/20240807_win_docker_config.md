@@ -13,7 +13,7 @@ categories:
   - Solution
 ---
 在windows10中安装完Docker后，想要修改Docker镜像及容器的存储位置，但是点开设置发现是这样的
-![](images/posts/20240807_win_docker_config/2910378857.jpg)
+![](/images/posts/20240807_win_docker_config/2910378857.jpg)
 这是由于docker使用了基于wsl2的方式安装。
 可以通过以下方式迁移docker
 
@@ -23,7 +23,7 @@ wsl -l -v --all
 ```
 
 返回结果如下图所示的话，需要先关闭docker；如果两个状态都是stopped的话，可以继续下一步操作
-![](images/posts/20240807_win_docker_config/885509585.jpg)
+![](/images/posts/20240807_win_docker_config/885509585.jpg)
 
 ```cmd
 # 导出docker及docker-data,'D:\Docker\'为导出存储路径，可以自行修改，执行完后可以在此路径下看到导出文件
