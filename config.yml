@@ -16,7 +16,7 @@ languages:
     params:
       homeInfoParams:
         Title: 欢迎欢迎!
-        Content: 「你算是捡到宝了！」—— 平凡即是真，技术即是美。
+        Content: 你算是捡到宝了！
   en:
     languageName: English
     params:
@@ -95,14 +95,14 @@ outputs:
     - RSS
     - JSON # is necessary
 
-markup:
-  highlight:
-    # anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    lineNos: true
-    noClasses: false
-    style: monokailight
-  goldmark:
-    renderer:
-      unsafe: true
+# markup:
+#   highlight:
+#     # anchorLineNos: true
+#     codeFences: true
+#     guessSyntax: true
+#     lineNos: true
+#     noClasses: false
+#     style: monokailight
+#   goldmark:
+#     renderer:
+#       unsafe: true
