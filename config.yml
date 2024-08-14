@@ -24,6 +24,7 @@ languages:
         Title: Hi there!
         Content: It's Onepiece.
 params:
+  favicon: "favicon.ico"
   # ShowReadingTime: true
   description: '记录工作，记录学习！'
   author: Hakuna
