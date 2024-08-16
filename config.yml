@@ -84,6 +84,7 @@ menu:
 
 
 
+
 permalinks:
   page:
     posts: /posts/:year/:month/:slug/
