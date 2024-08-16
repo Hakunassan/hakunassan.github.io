@@ -1,0 +1,3 @@
+[submodule "themes/PaperMod-PE"]
+	path = themes/PaperMod-PE
+	url = https://github.com/tofuwine/PaperMod-PE.git

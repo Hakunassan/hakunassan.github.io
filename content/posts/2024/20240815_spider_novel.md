@@ -12,10 +12,10 @@ tags:
 categories:
   - Interest
 ---
-# 目标：爬取古龙书屋的小说
-# 代码实现：下载每个页面的txt，合并成一整本小说
+## 目标：爬取古龙书屋的小说
+`代码实现：下载每个页面的txt，合并成一整本小说`
 
-## 根据网页URL，获取小说页面的链接组成
+### 根据网页URL，获取小说页面的链接组成
 ```markdown
 https://m.gulongsw.com/xs_968/938982.html
 其中：
@@ -24,9 +24,9 @@ https://m.gulongsw.com/xs_968/938982.html
     /938982.html 为小说章节页面
 ```
 
-## 使用BeautifulSoup模块解析小说页面
+### 使用BeautifulSoup模块解析小说页面
 
-### 获取下一章链接
+#### 获取下一章链接
 ```html
 <div class="pager"><a href="/xs_968/936604.html">上一章</a> <a href="/xs_968/">目 录</a> <a href="/xs_968/939514.html">下一章</a> <a id="mark">存书签</a> </div>
 ```
@@ -39,7 +39,7 @@ def next_page(soup):
             return str(a['href'])
 ```
 
-### 获取小说正文内容
+#### 获取小说正文内容
 ```html
 <div class="content">中的p标签
 ```
@@ -54,7 +54,7 @@ def download_page(soup):
     paragraph.append('\n\n\n\n')
 ```
 
-## 避免站点封禁IP，使用代理池
+### 避免站点封禁IP，使用代理池
 ```python
 def UserAgent_random():
     user_agent_list = [
@@ -76,7 +76,7 @@ def UserAgent_random():
     return UserAgent
 ```
 
-## 保存所有章节至TXT文档
+### 保存所有章节至TXT文档
 ```python
 with open('novel.txt', 'a', encoding='utf-8') as f:
             for p in paragraph:
@@ -85,7 +85,7 @@ with open('novel.txt', 'a', encoding='utf-8') as f:
 ```
 ----------
 
-## 完整代码
+### 完整代码
 ```python
 import random
 import requests

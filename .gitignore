@@ -3,3 +3,4 @@
 .obsidian
 secrets/
 .hugo_build.lock
+.vscode/

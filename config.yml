@@ -96,14 +96,10 @@ outputs:
     - RSS
     - JSON # is necessary
 
-# markup:
-#   highlight:
-#     # anchorLineNos: true
-#     codeFences: true
-#     guessSyntax: true
-#     lineNos: true
-#     noClasses: false
-#     style: monokailight
-#   goldmark:
-#     renderer:
-#       unsafe: true
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    noClasses: false
+    style: monokailight

@@ -12,17 +12,22 @@ tags:
 categories:
   - DevOps
 ---
-# 下载离线安装包
-https://download.docker.com/linux/static/stable/x86_64/docker-20.10.9.tgz
+## 下载离线安装包
+[docker-20.10.9.tgz](https://download.docker.com/linux/static/stable/x86_64/docker-20.10.9.tgz)
 
-# 解压压缩包
+## 解压压缩包
+```shell
 tar -xzvf docker-20.10.9.tgz
+```
 
-# 将解压后的文件拷贝至/usr/bin/目录下
+## 将解压后的文件拷贝至/usr/bin/目录下
+```shell
 cd docker
 cp * /usr/bin/
+```
 
-# 编写docker.service文件
+## 编写docker.service文件
+```shell
 vi /usr/lib/systemd/system/docker.service
 [Unit]
 Description=Docker Application Container Engine
@@ -45,11 +50,15 @@ StartLimitInterval=60s
  
 [Install]
 WantedBy=multi-user.target
+```
 
-# 添加开机自启
+## 添加开机自启
+```shell
 systemctl enable docker
+```
 
-# 迁移docker文件目录，配置docker
+## 迁移docker文件目录，配置docker
+```shell
 sudo cp -r /var/lib/docker /data/docker
 sudo nano /etc/docker/daemon.json
 {
@@ -62,8 +71,11 @@ sudo nano /etc/docker/daemon.json
 }
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+```
 
-# 配置docker-compose，将docker-compose文件复制至/usr/bin/下
+## 配置docker-compose，将docker-compose文件复制至/usr/bin/下
+```shell
 cp docker-compose-linux-x86_64 /usr/bin/docker-compose
 chmod +x /usr/bin/docker-compose
 docker-compose -v
+```
