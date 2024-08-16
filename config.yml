@@ -62,6 +62,7 @@ params:
 minify:
   disableXML: true
   # minifyOutput: true
+  
 
 menu:
   main:
