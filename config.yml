@@ -15,8 +15,8 @@ languages:
     languageName: 中文
     params:
       homeInfoParams:
-        Title: 欢迎欢迎!
-        Content: 你算是捡到宝了！
+        Title: 呜呼~
+        Content: 你终于找到这里了，我的老朋友。
   en:
     languageName: English
     params:
