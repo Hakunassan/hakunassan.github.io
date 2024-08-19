@@ -1,7 +1,7 @@
 ---
 author: "Hakuna"
 title: Docker部署Nacos
-slug: 
+slug: docker_nacos
 description: ""
 summary: "抛开烦恼，轻松部署"
 date: 2024-08-19 14:37:22

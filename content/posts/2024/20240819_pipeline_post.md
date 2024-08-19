@@ -1,7 +1,7 @@
 ---
 author: "Hakuna"
 title: Pipeline添加无论成功失败都触发的操作
-slug: 
+slug: pipeline_post
 description: ""
 summary: "像系统装了还原卡一样！"
 date: 2024-08-19 11:20:05

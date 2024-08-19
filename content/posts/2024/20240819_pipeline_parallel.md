@@ -1,7 +1,7 @@
 ---
 author: "Hakuna"
 title: pipeline并行构建
-slug: 
+slug: pipeline_parallel
 description: ""
 summary: "用并行构建，享畅快人生（注意机器性能，别把jenkins整宕了）"
 date: 2024-08-19 11:24:30
