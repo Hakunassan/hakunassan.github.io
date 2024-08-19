@@ -16,6 +16,7 @@ categories:
 #### 技术信息泄露漏洞 (CVSSv3: 中危)
 ![](/images/posts/2024/20240819_iis_security/20240819151447.png)
 `处理方式： 隐藏IIS版本号等标识信息`
+**修改web.config会即时生效，谨慎操作生产环境！**
 - 隐藏Server信息
 **必须安装IIS URL重写模块，不然会导致IIS页面503，切记！！！**
 下载对应版本[URL Rewirte](http://www.iis.net/downloads/microsoft/url-rewrite)进行安装
