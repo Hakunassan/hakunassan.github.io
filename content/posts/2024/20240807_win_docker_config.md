@@ -3,6 +3,7 @@ author: "Hakuna"
 title: Win10中WSL2 docker存储位置迁移
 slug: 
 description: 防止C盘大爆炸！
+summary: "系统盘还顶得住嘛？"
 date: 2024-08-08 11:17:47
 draft: false
 ShowToc: true

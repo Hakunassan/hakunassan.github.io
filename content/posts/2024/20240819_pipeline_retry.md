@@ -3,6 +3,7 @@ author: "Hakuna"
 title: Pipeline添加重试构建操作
 slug: 
 description: ""
+summary: "多试试，万一成了呢"
 date: 2024-08-19 11:17:05
 draft: false
 ShowToc: true

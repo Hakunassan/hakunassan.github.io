@@ -3,6 +3,7 @@ author: "Hakuna"
 title: Mysql主备部署(基于Binlog)
 slug: sql_master_slave
 description: ""
+summary: " "
 date: 2024-08-14 16:34:10
 draft: false
 ShowToc: true

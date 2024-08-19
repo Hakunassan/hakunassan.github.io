@@ -3,6 +3,7 @@ author: "Hakuna"
 title: 记一次Jenkins配置pipeline任务流程
 slug: 
 description: ""
+summary: "针对后端java项目的pipeline"
 date: 2024-08-15 13:38:13
 draft: false
 ShowToc: true
