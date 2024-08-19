@@ -31,6 +31,7 @@ params:
   DateFormat: "2006-01-02"
   ShowCodeCopyButtons: true
   showtoc: true
+  ShowReadingTime: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   socialIcons:
