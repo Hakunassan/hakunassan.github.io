@@ -33,7 +33,7 @@ def replace_title_in_post(file_path, title):
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
         lines[2] = 'title: ' + title + '\n'  # 注意：这里需要加上换行符
-        lines[3] = 'slug: \n'
+        lines[3] = 'slug: ' + title + '\n'
         with open(file_path, 'w', encoding='utf-8') as f:
             f.writelines(lines)
         print(f"Title replaced successfully in {file_path}")
