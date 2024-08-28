@@ -89,7 +89,7 @@ cd MyFlash-master/binary/
 --start-position=开始位置 --stop-position=结束位置 --binlogFileNames=binlog位置 \
 --outBinlogFileNameBase=recover.log
 ```
-***如果需要恢复数据过多，执行此命令可能会出现报错`Segmentation fault (core dumped)`，目前暂未找到解决方案***
+***如果使用了开始结束位置参数，执行此命令可能会出现报错`Segmentation fault (core dumped)`，解决方案为删除开始、结束位置参数，等处理完后再手工筛除recover中数据***
 
 #### 使用mysqlbinlog转换恢复文件并做数据导入
 ```shell
