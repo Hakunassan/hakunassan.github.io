@@ -39,3 +39,13 @@ categories:
   </customHeaders>
 ```
 
+- 隐藏X-AspNet-Version信息 
+下载[iis_stripheaders_module_1.0.5.msi](https://github.com/dionach/StripHeaders/releases/tag/v1.0.5)进行安装
+```cmd
+cd C:\Windows\System32\inetsrv
+# 加载模块
+appcmd.exe install module /name:StripHeadersModule /image:%windir%\system32\inetsrv\stripheaders.dll /add:true /lock:true
+# 卸载模块
+appcmd.exe uninstall module "StripHeadersModule"
+```
+操作成功后，X-AspNet-Version信息会自动隐藏
