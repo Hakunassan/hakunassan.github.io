@@ -14,6 +14,7 @@ categories:
   - DevOps
 ---
 > 参考官方部署文档：https://docs-opengauss.osinfra.cn/zh/docs/6.0.0/docs/InstallationGuide/%E4%B8%80%E7%AB%99%E5%BC%8F%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97.html
+> 
 > 下载地址：https://opengauss.org/zh/download/
 
 ### 前提条件（官方）
