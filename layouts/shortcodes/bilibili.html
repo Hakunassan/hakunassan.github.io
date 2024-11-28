@@ -1,12 +1,10 @@
-&lt;div style=&quot;position:relative; padding-bottom:75%; width:100%; height:0&quot;&gt;
-&lt;iframe
-        src=&quot;//player.bilibili.com/player.html?bvid={{.Get 0 }}&amp;page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&quot;
-        scrolling=&quot;no&quot;
-        border=&quot;0&quot;
-        frameborder=&quot;no&quot;
-        framespacing=&quot;0&quot;
-        allowfullscreen=&quot;true&quot;
-        style=&quot;position:absolute; height: 100%; width: 100%;&quot;
-&gt;
-&lt;/iframe&gt;
-&lt;/div&gt;
+<iframe
+    src="//player.bilibili.com/player.html?bvid={{.Get 0 }}&page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}"
+    scrolling="no"
+    height="768px"
+    width="1024px"
+    frameborder="no"
+    framespacing="0"
+    allowfullscreen="true"
+>
+</iframe>
