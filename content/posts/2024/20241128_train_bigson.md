@@ -14,4 +14,4 @@ categories:
   - Life
 ---
 
-{{&lt; bilibili 1tdB1Y2EXq &gt;}}
+{{< bilibili BV1tdB1Y2EXq >}}
