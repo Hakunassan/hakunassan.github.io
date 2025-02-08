@@ -59,6 +59,7 @@ params:
     disableHLJS: true
 
   comments: true
+  ShowFullTextinRSS: true
 
 minify:
   disableXML: true
